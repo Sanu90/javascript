@@ -6,3 +6,10 @@ function add(a, b, c) {
 }
 
 console.log(add(2, 3, 4));
+
+// function add() {
+//   console.log(arguments[0]);
+//   console.log(arguments[2]);
+// }
+
+// console.log(add(5, 10));
