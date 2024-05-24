@@ -12,14 +12,14 @@
 
 //USING RECURSION //
 
-const array = [1, 2, 3, 4,98];
+const array = [1, 2, 3, 4];
 
-function addArrayRecursion(array) {
+function addArrayRecursive(array) {
   if (array.length == 0) {
     return 0;
   }
-  //console.log(array);
-  return array.pop() + addArrayRecursion(array);
+
+  return array.pop() + addArrayRecursive(array);
 }
 
-console.log(addArrayRecursion(array));
+console.log(addArrayRecursive(array));
