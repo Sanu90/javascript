@@ -10,16 +10,15 @@
 // }
 // console.log(addArray(array1))
 
-//USING RECURSION //
+//SUM OF AN ARRAY USING RECURSION//
 
-const array = [1, 2, 3, 4];
-
-function addArrayRecursive(array) {
+const array = [1, 2, 3, 4, 5];
+function arraySum(array) {
   if (array.length == 0) {
     return 0;
   }
-
-  return array.pop() + addArrayRecursive(array);
+  return array.pop() + arraySum(array);
+  //return sum;
 }
 
-console.log(addArrayRecursive(array));
+console.log(arraySum(array));
