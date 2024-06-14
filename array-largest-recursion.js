@@ -1,3 +1,5 @@
+//find the maximum and minimum value using recursion //
+
 let array = [10, 27, 25, 14, 19, 28]; // 10,14,19,25,27,28
 
 function maxMinRecursion(array, i, max, min) {
