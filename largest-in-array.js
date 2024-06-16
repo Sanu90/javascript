@@ -14,7 +14,7 @@ function largestNumber(array) {
   return [large, index];
 }
 
-//console.log(largestNumber(array));
+console.log(largestNumber(array));
 
 // find the smallest element in the array w/o sorting //
 
