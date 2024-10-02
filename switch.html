@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch case in JS</title>
+    <label for="num1">Enter the first number:</label>
+    <input type="number" id="num1" placeholder="Number 1" />
+    <br />
+    <br />
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" placeholder="Number 2" />
+    <br />
+    <br />
+
+    <label for="operation">Choose an Operation to perform</label>
+    <select name="operation" id="operation">
+      <option value="">Choose one</option>
+      <option value="+">Add</option>
+      <option value="-">Sub</option>
+      <option value="*">Mul</option>
+      <option value="/">Div</option>
+    </select>
+    <br />
+    <br />
+    <button onclick="result()">Calculate</button>
+
+    <h2 id="result"></h2>
+  </head>
+  <body></body>
+
+  <script>
+    function result() {
+      const num1 = parseInt(document.getElementById("num1").value);
+      const num2 = parseInt(document.getElementById("num2").value);
+      const operation = document.getElementById("operation").value;
+      console.log(num1, num2, operation);
+      let result = 0;
+
+      switch (operation) {
+        case "+": {
+          console.log("1");
+
+          result = num1 + num2;
+          break;
+        }
+        case "-": {
+          console.log("2");
+          result = num1 - num2;
+          break;
+        }
+        case "*": {
+          console.log("3");
+          result = num1 * num2;
+          break;
+        }
+        case "/": {
+          console.log("4");
+          result = num1 / num2;
+          break;
+        }
+        default:
+          result = "error";
+          break;
+      }
+      console.log("result is:", result);
+      document.getElementById("result").innerText = "result: " + result;
+      //
+    }
+  </script>
+</html>
